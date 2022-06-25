@@ -1,0 +1,17 @@
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Persistencia.deps.json
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Persistencia.runtimeconfig.json
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Persistencia.dll
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\ref\Persistencia.dll
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Persistencia.pdb
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Dominio.dll
+D:\source\repos\BCP.Money\Persistencia\bin\Debug\net6.0\Dominio.pdb
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.csproj.AssemblyReference.cache
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.AssemblyInfoInputs.cache
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.AssemblyInfo.cs
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.csproj.CoreCompileInputs.cache
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.csproj.CopyComplete
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.dll
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\ref\Persistencia.dll
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.pdb
+D:\source\repos\BCP.Money\Persistencia\obj\Debug\net6.0\Persistencia.genruntimeconfig.cache

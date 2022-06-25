@@ -4,14 +4,14 @@
     "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
-    "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj": {
+    "D:\\source\\repos\\BCP.Money\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj",
-        "projectName": "Persistencia",
-        "projectPath": "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "D:\\source\\repos\\BCP.Money\\Dominio\\Dominio.csproj",
+        "projectName": "Dominio",
+        "projectPath": "D:\\source\\repos\\BCP.Money\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\fabri\\.nuget\\packages\\",
-        "outputPath": "D:\\source\\repos\\BCP.Money\\Persistencia\\obj\\",
+        "outputPath": "D:\\source\\repos\\BCP.Money\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\fabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -50,6 +56,90 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj",
+        "projectName": "Persistencia",
+        "projectPath": "D:\\source\\repos\\BCP.Money\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\fabri\\.nuget\\packages\\",
+        "outputPath": "D:\\source\\repos\\BCP.Money\\Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\fabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\source\\repos\\BCP.Money\\Dominio\\Dominio.csproj": {
+                "projectPath": "D:\\source\\repos\\BCP.Money\\Dominio\\Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
