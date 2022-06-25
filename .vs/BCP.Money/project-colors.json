@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "696412a7-785a-4092-8484-d9dc78854dc7": {
+      "ProjectGuid": "696412a7-785a-4092-8484-d9dc78854dc7",
+      "DisplayName": "Aplicacion",
+      "ColorIndex": 0
+    },
+    "e05d53b5-8ee1-4ecf-855f-742393f1492a": {
+      "ProjectGuid": "e05d53b5-8ee1-4ecf-855f-742393f1492a",
+      "DisplayName": "API",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "3a8d81ed-f043-4cd5-bc8a-ebd575ecdeb1": {
+      "ProjectGuid": "3a8d81ed-f043-4cd5-bc8a-ebd575ecdeb1",
+      "DisplayName": "Dominio",
+      "ColorIndex": 2
+    },
+    "657d490d-2f77-406a-a439-2025b5324ca3": {
+      "ProjectGuid": "657d490d-2f77-406a-a439-2025b5324ca3",
+      "DisplayName": "Persistencia",
+      "ColorIndex": 3
+    },
+    "03eca65c-e8e4-43c2-96b1-80a05db2c4c8": {
+      "ProjectGuid": "03eca65c-e8e4-43c2-96b1-80a05db2c4c8",
+      "DisplayName": "Seguridad",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}
