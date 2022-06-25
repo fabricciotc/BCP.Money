@@ -87,10 +87,10 @@ services.AddSwaggerGen(d =>
 services.AddMvc(option => option.EnableEndpointRouting = false);
 
 // In production, the Angular files will be served from this directory
-//services.AddSpaStaticFiles(configuration =>
-//{
-//    configuration.RootPath = "../Presentacion/dist";
-//});
+services.AddSpaStaticFiles(configuration =>
+{
+    configuration.RootPath = "../Presentacion/dist";
+});
 
 
 var app = builder.Build();
@@ -134,7 +134,7 @@ app.UseSpa(spa =>
 
     //if (!env.IsDevelopment())
     //{
-    spa.UseAngularCliServer(npmScript: "start");
+    //spa.UseAngularCliServer(npmScript: "start");
     //}
 });
 
