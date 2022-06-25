@@ -116,7 +116,7 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Monedas Online v1");
 });
-app.UseStaticFiles();
+//app.UseStaticFiles();
 //app.UseSpaStaticFiles();
 app.UseMvc(routes =>
 {
@@ -125,17 +125,17 @@ app.UseMvc(routes =>
         template: "{controller}/{action=Index}/{id?}");
 });
 
-app.UseSpa(spa =>
-{
-    // To learn more about options for serving an Angular SPA from ASP.NET Core,
-    // see https://go.microsoft.com/fwlink/?linkid=864501
+//app.UseSpa(spa =>
+//{
+//    // To learn more about options for serving an Angular SPA from ASP.NET Core,
+//    // see https://go.microsoft.com/fwlink/?linkid=864501
 
-    spa.Options.SourcePath = "../Presentacion";
+//    spa.Options.SourcePath = "../Presentacion";
 
-    //if (!env.IsDevelopment())
-    //{
-    //spa.UseAngularCliServer(npmScript: "start");
-    //}
-});
+//    //if (!env.IsDevelopment())
+//    //{
+//    //spa.UseAngularCliServer(npmScript: "start");
+//    //}
+//});
 
 app.Run();
