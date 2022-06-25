@@ -46,7 +46,15 @@ services.AddControllers(opt => {
     opt.Filters.Add(new AuthorizeFilter(policy));
 }).AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<Nuevo>());
 
-var builderServices = services.AddIdentityCore<Usuario>();
+var builderServices = services.AddIdentityCore<Usuario>(o =>
+{
+    // configure identity options
+    o.Password.RequireDigit = false;
+    o.Password.RequireLowercase = false;
+    o.Password.RequireUppercase = false;
+    o.Password.RequireNonAlphanumeric = false;
+    o.Password.RequiredLength = 5;
+});
 
 var identityBuilder = new IdentityBuilder(builderServices.UserType, builder.Services);
 
