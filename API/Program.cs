@@ -89,7 +89,7 @@ services.AddMvc(option => option.EnableEndpointRouting = false);
 // In production, the Angular files will be served from this directory
 services.AddSpaStaticFiles(configuration =>
 {
-    configuration.RootPath = "wwwroot/Presentacion";
+    configuration.RootPath = "../Presentacion/Publish";
 });
 
 
@@ -130,7 +130,7 @@ app.UseSpa(spa =>
     // To learn more about options for serving an Angular SPA from ASP.NET Core,
     // see https://go.microsoft.com/fwlink/?linkid=864501
 
-    spa.Options.SourcePath = "wwwroot/Presentacion";
+    spa.Options.SourcePath = "../Presentacion/Publish";
 
     //if (!env.IsDevelopment())
     //{

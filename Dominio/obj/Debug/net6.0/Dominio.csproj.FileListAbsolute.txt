@@ -9,4 +9,3 @@ D:\source\repos\BCP.Money\Dominio\obj\Debug\net6.0\Dominio.csproj.CoreCompileInp
 D:\source\repos\BCP.Money\Dominio\obj\Debug\net6.0\Dominio.dll
 D:\source\repos\BCP.Money\Dominio\obj\Debug\net6.0\ref\Dominio.dll
 D:\source\repos\BCP.Money\Dominio\obj\Debug\net6.0\Dominio.pdb
-D:\source\repos\BCP.Money\Dominio\obj\Debug\net6.0\Dominio.csproj.AssemblyReference.cache
