@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yIMAGvzLYF2CujJxuEHFUjAfuks9ibECD4NaBWqyWHo=",
+  "Hash": "X6/fM43TFr/GFbDrThn1JrO4cOKg6kizw7Fh1vHgx3M=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -204,12 +204,12 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\main.76fea7df17ec8595.js",
+      "Identity": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\main.178771ae1679d335.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "main.76fea7df17ec8595.js",
+      "RelativePath": "main.178771ae1679d335.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,7 +218,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\main.76fea7df17ec8595.js"
+      "OriginalItemSpec": "wwwroot\\main.178771ae1679d335.js"
     },
     {
       "Identity": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\polyfills.e8d7b3e8950ebc96.js",
@@ -255,12 +255,12 @@
       "OriginalItemSpec": "wwwroot\\runtime.457095077612e89b.js"
     },
     {
-      "Identity": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\styles.0d48c09eb09ae944.css",
+      "Identity": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\styles.b59d268401fe0a1f.css",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\source\\repos\\BCP.Money\\API\\wwwroot\\",
       "BasePath": "_content/API",
-      "RelativePath": "styles.0d48c09eb09ae944.css",
+      "RelativePath": "styles.b59d268401fe0a1f.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\styles.0d48c09eb09ae944.css"
+      "OriginalItemSpec": "wwwroot\\styles.b59d268401fe0a1f.css"
     }
   ]
 }

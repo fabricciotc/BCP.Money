@@ -1,1 +1,59 @@
-<p>cotizar-form works!</p>
+<h1>Cotizador</h1>
+<form class="form-horizontal" novalidate
+      (ngSubmit)="save()" [formGroup]="formGroup">
+  <fieldset>
+    <select id="tipo_Cambio_Id"
+            required
+            formControlName="tipo_Cambio_Id">
+      <option *ngFor="let c of tipocambios" [ngValue]="c.tipo_Cambio_Id">{{c.abreviacion}}</option>
+    </select>
+   
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('montoInicial')!.touched || formGroup.get('montoInicial')!.dirty)
+         && !formGroup.get('montoInicial')!.valid }">
+      <label class="col-md-2 control-label"
+             for="montoId">Monto</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               id="montoInicialId"
+               type="number"
+               required
+               formControlName="montoInicial" />
+        <span class="help-block" *ngIf="(formGroup.get('montoInicial')!.touched || formGroup.get('montoInicial')!.dirty)
+              && formGroup.get('montoInicial')!.errors">
+          <span *ngIf="formGroup.get('montoInicial')?.hasError('required')">
+            El campo monto es requerido
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-2 control-label"
+             for="conversionId">{{mensaje}}</label>
+      <!-- <label class="col-md-2 control-label"
+             for="conversionId">{{final}}</label> -->
+    </div>
+
+
+
+    <div class="form-group" style="margin-top: 15px;">
+      <div class="col-md-4 col-md-offset-2">
+        <span>
+          <button class="btn btn_naranja rounded-pill"
+                  type="submit"
+                  [disabled]="!formGroup.valid">
+            Calcular
+          </button>
+          <button class="btn btn-primary rounded-pill" style="margin:0px 20px"
+                  type="button"
+                  [routerLink]='["/tipocambio"]'>
+            Cancelar
+          </button>
+        </span>
+
+      </div>
+
+    </div>
+  </fieldset>
+</form>

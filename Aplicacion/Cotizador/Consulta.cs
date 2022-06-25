@@ -47,7 +47,7 @@ namespace Aplicacion.Cotizador
                     AbreviacionDestino = request.AbreviacionDestino,
                     AbreviacionOrigen = request.AbreviacionOrigen,
                     MontoInicial = request.MontoInicial,
-                    MontoFinal = request.MontoInicial * cursos.Conversion * (decimal)tasaPreferencial
+                    MontoFinal = Math.Round( request.MontoInicial / (cursos.Conversion * (decimal)tasaPreferencial),2)
                 };
                 return coti;
             }

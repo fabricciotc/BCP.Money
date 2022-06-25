@@ -1,7 +1,7 @@
 <p>tipocambio works!</p>
-<h1>Tipo de Cambio</h1>
-<button class="btn btn-primary" [routerLink]='["/tipocambio/agregar"]'>Agregar Tipo de Cambio</button>
-<button class="btn btn-dark" [routerLink]='["/tipocambio/cotizar"]'>Cotizar Moneda</button>
+<h1 style="margin-bottom: 15px; font-weight: bold; font-style: italic;">Tipo de Cambio</h1>
+<button class="btn btn-primary rounded-pill" [routerLink]='["/tipocambio/agregar"]'>Agregar Tipo de Cambio</button>
+<button class="btn btn_naranja rounded-pill" [routerLink]='["/tipocambio/cotizar"]' style="margin:0px 20px;">Cotizar Moneda</button>
 <p *ngIf="!(personas&&personas.length)">
   No existen registros para mostrar
 </p>
@@ -22,10 +22,10 @@
       <td>{{persona.monedaOrigen.abreviacion}}</td>
       <td>{{persona.monedaDestino.abreviacion}}</td>
       <td>{{persona.conversion}}</td>
-      <td>{{persona.fechaActualizacion | date :'dd/MM/yy'}}</td>
+      <td>{{persona.fechaActualizacion | date :'dd/MM/yy hh:mm:ss'}}</td>
       <td>
-        <button class="btn btn-primary" [routerLink]='["/tipocambio/editar/"+persona.tipo_Cambio_Id]'>Editar</button>
-        <button class="btn btn-danger" (click)="delete(persona)">Borrar</button>
+        <button class="btn btn_naranja rounded-pill" [routerLink]='["/tipocambio/editar/"+persona.tipo_Cambio_Id]'>Editar</button>
+        <button class="btn btn-danger rounded-pill" (click)="delete(persona)" style="margin: 0px 20px;">Borrar</button>
       </td>
     </tr>
 
