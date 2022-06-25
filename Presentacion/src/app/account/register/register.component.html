@@ -1,0 +1,113 @@
+<div class="outer">
+    <div class="middle">
+      <div class="inner">
+        <div>
+          <h1 style="font-weight: bold; font-style: italic;">Registrarse</h1>
+        </div>
+        <form class="form-horizontal" novalidate
+              [formGroup]="formGroup">
+          <fieldset>
+            <div class="form-group"
+                 [ngClass]="{'has-error': (formGroup.get('nombreCompleto')!.touched || formGroup.get('nombreCompleto')!.dirty) && !formGroup.get('nombreCompleto')!.valid }">
+              <label class=" control-label"
+                     for="nombreCompletoID">Nombre Completo</label>
+  
+              <div>
+                <input class="form-control"
+                       id="nombreCompletoID"
+                       type="text"
+                       required
+                       formControlName="nombreCompleto" />
+                <span class="help-block" *ngIf="(formGroup.get('nombreCompleto')!.touched || formGroup.get('nombreCompleto')!.dirty) && formGroup.get('nombreCompleto')!.errors">
+                  <span *ngIf="formGroup.get('nombreCompleto')?.hasError('required')">
+                    El campo nombre es requerido
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="form-group"
+            [ngClass]="{'has-error': (formGroup.get('username')!.touched || formGroup.get('username')!.dirty) && !formGroup.get('username')!.valid }">
+         <label class=" control-label"
+                for="usernameID">Username</label>
+  
+         <div>
+           <input class="form-control"
+                  id="usernameID"
+                  type="text"
+                  required
+                  formControlName="username" />
+           <span class="help-block" *ngIf="(formGroup.get('username')!.touched || formGroup.get('username')!.dirty) && formGroup.get('username')!.errors">
+             <span *ngIf="formGroup.get('username')?.hasError('required')">
+               El campo Username es requerido
+             </span>
+           </span>
+         </div>
+       </div>
+            <div class="form-group"
+                 [ngClass]="{'has-error': (formGroup.get('email')!.touched || formGroup.get('email')!.dirty) && !formGroup.get('email')!.valid }">
+              <label class=" control-label"
+                     for="emailId">Email</label>
+  
+              <div>
+                <input class="form-control"
+                       id="emailId"
+                       type="text"
+                       required
+                       formControlName="email" />
+                <span class="help-block" *ngIf="(formGroup.get('email')!.touched || formGroup.get('email')!.dirty) && formGroup.get('email')!.errors">
+                  <span *ngIf="formGroup.get('email')?.hasError('required')">
+                    El campo email es requerido
+                  </span>
+                </span>
+              </div>
+            </div>
+  
+            <div class="form-group"
+                 [ngClass]="{'has-error': (formGroup.get('password')!.touched || formGroup.get('password')!.dirty) && !formGroup.get('password')!.valid }">
+              <label class=" control-label"
+                     for="passwordId">Password</label>
+  
+              <div>
+                <input class="form-control"
+                       id="passwordId"
+                       type="password"
+                       required
+                       formControlName="password" />
+                <span class="help-block" *ngIf="(formGroup.get('password')!.touched || formGroup.get('password')!.dirty) && formGroup.get('password')!.errors">
+                  <span *ngIf="formGroup.get('password')?.hasError('required')">
+                    El campo password es requerido
+                  </span>
+                </span>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class=" col-md-offset-2">
+                <span>
+                  <button class="btn btn_naranja rounded-pill"
+                          type="button"
+                          (click)="registrarse()"
+                          [disabled]="!formGroup.valid">
+                    Registrarse
+                  </button>
+                  <a class="linked"
+                     [routerLink]='["/login"]'>
+                    ¿Tienes una cuenta? Inicia tu sesion aqui.
+                  </a>
+                  <button class="btn"
+                          type="button"
+                          [routerLink]='["/"]'>
+                    Cancelar
+                  </button>
+                </span>
+  
+              </div>
+  
+            </div>
+  
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Flexo";
+    src: local("Flexo"), url(./assets/fonts/Flexo-Demi.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Flexo";
+    src: local("Flexo"), url(./assets/fonts/Flexo-Black.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Flexo";
+    src: local("Flexo"), url(./assets/fonts/Flexo-BlackIt.ttf) format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Flexo";
+    src: local("Flexo"), url(./assets/fonts/Flexo-DemiIt.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+* {
+    font-size: 100%;
+    font-family: Flexo;
+   
+   }
+   body{
+    background: #F2F4F8;
+   }

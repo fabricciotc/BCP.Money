@@ -1,0 +1,28 @@
+<h1 style="font-weight: bold; font-style: italic;">Monedas</h1>
+<button class="btn btn-primary rounded-pill" [routerLink]='["/monedas/agregar"]'>Agregar Moneda</button>
+<p *ngIf="!(monedas&&monedas.length)">
+  No existen registros para mostrar
+</p>
+
+
+<table class="table" *ngIf="monedas&&monedas.length">
+  <thead>
+    <tr>
+      <th>Abrevacion</th>
+      <th>Descripción</th>
+      <th>Ultimo Cambio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let moneda of monedas">
+      <td class="align-middle">{{moneda.abreviacion}}</td>
+      <td  class="align-middle">{{moneda.descripcion}}</td>
+      <td  class="align-middle">{{moneda.fechaActualizacion | date :'dd/MM/yy hh:mm:ss'}}</td>
+      <td>
+        <button class="btn btn_naranja rounded-pill" [routerLink]='["/monedas/editar/"+moneda.monedaId]'>Editar</button>
+        <button class="btn btn-danger rounded-pill" (click)="delete(moneda)">Borrar</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

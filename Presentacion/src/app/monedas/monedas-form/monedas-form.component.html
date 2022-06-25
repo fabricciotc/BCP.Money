@@ -1,0 +1,64 @@
+<h1>{{modoEdicion ? 'Editar' : 'Agregar'}} Moneda</h1>
+<form class="form-horizontal" novalidate
+      (ngSubmit)="save()" [formGroup]="formGroup">
+  <fieldset>
+
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('abreviacion')!.touched || formGroup.get('abreviacion')!.dirty) && !formGroup.get('abreviacion')!.valid }">
+      <label class="col-md-2 control-label"
+             for="nombreId">Abreviacion</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               id="abreviacionId"
+               type="text"
+               required
+               formControlName="abreviacion" uppercase />
+        <span class="help-block" *ngIf="(formGroup.get('abreviacion')!.touched || formGroup.get('abreviacion')!.dirty) && formGroup.get('abreviacion')!.errors">
+          <span *ngIf="formGroup.get('abreviacion')?.hasError('required')">
+            El campo abreviacion es requerido
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class="form-group"
+         [ngClass]="{'has-error': (formGroup.get('descripcion')!.touched || formGroup.get('descripcion')!.dirty) && !formGroup.get('descripcion')!.valid }">
+      <label class="col-md-2 control-label"
+             for="nombreId">Descripcion</label>
+
+      <div class="col-md-8">
+        <input class="form-control"
+               id="descripcionId"
+               type="text"
+               required
+               formControlName="descripcion" />
+        <span class="help-block" *ngIf="(formGroup.get('descripcion')!.touched || formGroup.get('descripcion')!.dirty) && formGroup.get('descripcion')!.errors">
+          <span *ngIf="formGroup.get('abreviacion')?.hasError('required')">
+            El campo descripcion es requerido
+          </span>
+        </span>
+      </div>
+    </div>
+
+
+
+    <div class="form-group" style="margin-top: 15px;">
+      <div class="col-md-4 col-md-offset-2">
+        <span>
+          <button class="btn btn-primary rounded-pill"
+                  type="submit"
+                  [disabled]="!formGroup.valid">
+            Salvar
+          </button>
+          <button class="btn btn-danger rounded-pill" style="margin:0px 20px;"
+                  type="button"
+                  [routerLink]='["/monedas"]'>
+            Cancelar
+          </button>
+        </span>
+
+      </div>
+
+    </div>
+  </fieldset>
+</form>

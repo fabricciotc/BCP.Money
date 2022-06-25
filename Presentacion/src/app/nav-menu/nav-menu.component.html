@@ -1,0 +1,60 @@
+<header>
+    <nav
+      class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg_blue border-bottom box-shadow mb-3"
+    >
+      <div class="container">
+        <a class="navbar-brand" [routerLink]="['/']"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          aria-label="Toggle navigation"
+          [attr.aria-expanded]="isExpanded"
+          (click)="toggle()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse"
+          [ngClass]="{ show: isExpanded }"
+        >
+          <ul class="navbar-nav flex-grow">
+            <li class="nav-item"
+                [routerLinkActive]="['link-active']"
+                [routerLinkActiveOptions]="{ exact: true }">
+              <a class="nav-link text-white" [routerLink]="['/']">Home</a>
+            </li>
+     
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-white" [routerLink]="['/monedas']">Monedas</a>
+            </li>
+            <li class="nav-item" [routerLinkActive]="['link-active']">
+              <a class="nav-link text-white" [routerLink]="['/tipocambio']">Tipo de Cambio</a>
+            </li>
+            <li class="nav-item" *ngIf="!estaLogueado()" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link rounded-pill btn btn-outline-light border-2 text-white"  style="font-size:14px;margin:0px 12px" [routerLink]='["/login"]' (click)='collapse()'>
+                <span class='glyphicon glyphicon-th-list'></span> Iniciar Sesion
+              </a>
+            </li>
+            <li class="nav-item" *ngIf="!estaLogueado()" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link rounded-pill btn btn_naranja border-2 text-white" [routerLink]='["/register"]' style="font-size:14px" (click)='collapse()'>
+                <span class='glyphicon glyphicon-th-list'></span> Registrar Usuario
+              </a>
+            </li>
+            <li *ngIf="estaLogueado()" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link text-white" style="font-style: italic;">
+                <span class='glyphicon glyphicon-th-list'></span> BCP/{{obtenerUniqueName()}}
+              </a>
+            </li>
+            <li *ngIf="estaLogueado()" [routerLinkActive]='["link-active"]'>
+              <a class="nav-link btn_rojo rounded-pill" (click)='logout()' style="cursor:pointer">
+                <span class='glyphicon glyphicon-th-list'></span> Cerrar Sesion
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  

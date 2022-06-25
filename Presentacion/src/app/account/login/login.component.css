@@ -1,0 +1,40 @@
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled),
+.btn-success.disabled, .btn-success:disabled, .linked {
+  width: 100%;
+}
+.linked {
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+}
+.help-block {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+}
+.outer {
+  display: table;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 400px;
+  padding:20px
+  /*whatever width you want*/
+}
+.btn_naranja{
+  background-color: #ff7800;
+  color: #fff;
+  width: 100%;
+  margin: 20px 0px;
+}

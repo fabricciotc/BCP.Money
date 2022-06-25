@@ -30,7 +30,7 @@ namespace Aplicacion.Monedas
             }
             public async Task<Unit> Handle(Ejecuta request, CancellationToken cancellationToken)
             {
-                _context.Database.BeginTransaction();
+                //_context.Database.BeginTransaction();
                 Guid _MonedaId = Guid.NewGuid();
                 _context.Add( new Moneda{
                     MonedaId = _MonedaId,
@@ -39,7 +39,7 @@ namespace Aplicacion.Monedas
                     fechaCreacion = DateTime.UtcNow
                 });
                 var result = await _context.SaveChangesAsync();
-                await _context.Database.CommitTransactionAsync();
+                //await _context.Database.CommitTransactionAsync();
                 return result>0?Unit.Value:throw new Exception("No se pudo insertar la Moneda");
             }
 
