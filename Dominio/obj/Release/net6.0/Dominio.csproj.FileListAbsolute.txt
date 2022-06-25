@@ -1,0 +1,12 @@
+D:\source\repos\BCP.Money\Dominio\bin\Release\net6.0\Dominio.deps.json
+D:\source\repos\BCP.Money\Dominio\bin\Release\net6.0\Dominio.dll
+D:\source\repos\BCP.Money\Dominio\bin\Release\net6.0\ref\Dominio.dll
+D:\source\repos\BCP.Money\Dominio\bin\Release\net6.0\Dominio.pdb
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.csproj.AssemblyReference.cache
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.AssemblyInfoInputs.cache
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.AssemblyInfo.cs
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.csproj.CoreCompileInputs.cache
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.dll
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\ref\Dominio.dll
+D:\source\repos\BCP.Money\Dominio\obj\Release\net6.0\Dominio.pdb

@@ -1,0 +1,12 @@
+D:\source\repos\BCP.Money\published\Dominio.dll
+D:\source\repos\BCP.Money\published\Dominio.deps.json
+D:\source\repos\BCP.Money\published\Dominio.pdb
+D:\source\repos\BCP.Money\published\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\source\repos\BCP.Money\published\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\source\repos\BCP.Money\published\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\source\repos\BCP.Money\published\Microsoft.EntityFrameworkCore.dll
+D:\source\repos\BCP.Money\published\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\source\repos\BCP.Money\published\Microsoft.EntityFrameworkCore.Relational.dll
+D:\source\repos\BCP.Money\published\Microsoft.Extensions.Caching.Memory.dll
+D:\source\repos\BCP.Money\published\Microsoft.Extensions.Identity.Core.dll
+D:\source\repos\BCP.Money\published\Microsoft.Extensions.Identity.Stores.dll

@@ -87,10 +87,10 @@ services.AddSwaggerGen(d =>
 services.AddMvc(option => option.EnableEndpointRouting = false);
 
 // In production, the Angular files will be served from this directory
-services.AddSpaStaticFiles(configuration =>
-{
-    configuration.RootPath = "../Presentacion/dist";
-});
+//services.AddSpaStaticFiles(configuration =>
+//{
+//    configuration.RootPath = "../Presentacion/dist";
+//});
 
 
 var app = builder.Build();
@@ -99,7 +99,7 @@ app.UseMiddleware<ManejadorErrorMiddleware>();
 
 
 //DE MOMENTO LO COMENTO PARA NO USAR HTTPS EN DESARROLLO
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 
 app.UseAuthentication();
 
@@ -117,7 +117,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Monedas Online v1");
 });
 app.UseStaticFiles();
-app.UseSpaStaticFiles();
+//app.UseSpaStaticFiles();
 app.UseMvc(routes =>
 {
     routes.MapRoute(

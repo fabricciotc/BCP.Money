@@ -1,1 +1,33 @@
 <p>tipocambio works!</p>
+<h1>Tipo de Cambio</h1>
+<button class="btn btn-primary" [routerLink]='["/tipocambio/agregar"]'>Agregar Tipo de Cambio</button>
+<button class="btn btn-dark" [routerLink]='["/tipocambio/cotizar"]'>Cotizar Moneda</button>
+<p *ngIf="!(personas&&personas.length)">
+  No existen registros para mostrar
+</p>
+
+
+<table class="table" *ngIf="personas&&personas.length">
+  <thead>
+    <tr>
+      <th>Abreviacion</th>
+      <th>Moneda Origen</th>
+      <th>Moneda Destino</th>
+      <th>Conversion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{persona.abreviacion}}</td>
+      <td>{{persona.monedaOrigen.abreviacion}}</td>
+      <td>{{persona.monedaDestino.abreviacion}}</td>
+      <td>{{persona.conversion}}</td>
+      <td>{{persona.fechaActualizacion | date :'dd/MM/yy'}}</td>
+      <td>
+        <button class="btn btn-primary" [routerLink]='["/tipocambio/editar/"+persona.tipo_Cambio_Id]'>Editar</button>
+        <button class="btn btn-danger" (click)="delete(persona)">Borrar</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

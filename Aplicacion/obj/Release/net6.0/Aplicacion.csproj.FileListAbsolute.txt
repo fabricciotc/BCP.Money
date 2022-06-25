@@ -1,0 +1,17 @@
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Aplicacion.deps.json
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Aplicacion.dll
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\ref\Aplicacion.dll
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Aplicacion.pdb
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Dominio.dll
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Persistencia.dll
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Dominio.pdb
+D:\source\repos\BCP.Money\Aplicacion\bin\Release\net6.0\Persistencia.pdb
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.csproj.AssemblyReference.cache
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.AssemblyInfoInputs.cache
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.AssemblyInfo.cs
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.csproj.CoreCompileInputs.cache
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.csproj.CopyComplete
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.dll
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\ref\Aplicacion.dll
+D:\source\repos\BCP.Money\Aplicacion\obj\Release\net6.0\Aplicacion.pdb
